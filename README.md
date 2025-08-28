@@ -1,4 +1,4 @@
-# Arduino-Parking-Assistant-V3
+# Arduino Parking Assistant V3
 
 [![Q4CRfxDFBEk](https://i.imgur.com/WEg99dr.jpeg)](https://www.youtube.com/watch?v=rqTDj7GabGw)
 
