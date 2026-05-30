@@ -23,6 +23,7 @@ const int buzzerPin = 4;
 
 // Including Wi-Fi libraries
 #include <WiFi.h>
+#include <esp_wifi.h>
 #include <HTTPClient.h>
 const char* ssid       = "XXX";
 const char* password   = "XXX";
@@ -46,6 +47,9 @@ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 
 void setup() {
+  // Set max TX power to 8.5 dBm (the most stable value reported by users)
+  esp_wifi_set_max_tx_power(WIFI_POWER_8_5dBm);
+ 
   // put your setup code here, to run once:
   Serial.begin(115200);
   
